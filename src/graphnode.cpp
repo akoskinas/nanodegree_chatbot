@@ -11,7 +11,8 @@ GraphNode::~GraphNode()
     //// STUDENT CODE
     ////
 
-    delete _chatBot; 
+    // init code: the following line is the Task0: the _chatBot is already deleted before
+    // delete _chatBot; 
 
     ////
     //// EOF STUDENT CODE
