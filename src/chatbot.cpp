@@ -83,7 +83,6 @@ ChatBot& ChatBot::operator=(const ChatBot& src){
 ChatBot::ChatBot(ChatBot&& src){
     
     std::cout << "ChatBot Move Constructor" << std::endl;
-    
     _chatLogic = src._chatLogic;
     src._chatLogic = nullptr;
 
@@ -95,6 +94,8 @@ ChatBot::ChatBot(ChatBot&& src){
     
     _image = src._image;
     src._image = NULL;
+
+    _chatLogic->SetChatbotHandle(this);
 }
 
 // move assignment operator
