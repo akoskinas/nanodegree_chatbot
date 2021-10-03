@@ -114,6 +114,8 @@ ChatBot& ChatBot::operator=(ChatBot&& src){
 
         _image = src._image;
         src._image = NULL;
+
+        _chatLogic->SetChatbotHandle(this);
     }
     return *this;
 }
